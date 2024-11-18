@@ -15,10 +15,14 @@ extension Navigation on BuildContext {
   }
   void pop() => Navigator.of(this).pop();
 }
+
+
 // to use it "'text'.isNullOrEmpty()"
 extension StringExtension on String? {
   bool isNullOrEmpty() => this == null || this == "";
 }
+
+
 // to use it "[].isNullOrEmpty()"
 extension ListExtension<T> on List<T>? {
   bool isNullOrEmpty() => this == null || this!.isEmpty;

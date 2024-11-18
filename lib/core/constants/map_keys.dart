@@ -17,3 +17,7 @@ const String FAV_LIST = 'favoriteList';
 const String IMG_URL = 'url';
 // const String IMG_IS_FAV = 'isFavorite';
 const String IMG_PORTRAIT = 'portraitPath';
+
+
+
+const String userToken = 'userToken';

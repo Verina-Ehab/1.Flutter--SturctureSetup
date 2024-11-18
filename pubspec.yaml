@@ -37,7 +37,7 @@ dependencies:
   # Supabase
 
 
-  flutter_native_splash: ^2.3.5
+  flutter_native_splash: ^2.4.0
   shared_preferences: ^2.3.3
 
   # Responsive UI
@@ -53,6 +53,28 @@ dependencies:
   flutter_secure_storage: ^4.2.1
   # Add shimmer effect
   shimmer: ^3.0.0
+  lottie: ^3.1.3
+
+flutter_native_splash:
+  color: "#ffd767"
+  # background_image: "assets/images/splash.png"
+  image: assets/images/splash.png
+  # Splash Image to show in dark mode (Optional)
+  # color_dark: "#042a49"
+  image_dark: assets/images/splash.png
+
+  android_12:
+    image: assets/images/splash_android12_logo.png
+    color: "#8E6CEF"
+    image_dark: assets/images/splash_android12_logo.png
+
+  # The android, ios and web parameters can be used to disable generating a splash screen on a given
+  # platform.
+  android: true
+  ios: true
+  web: false
+
+
 
 dev_dependencies:
   flutter_test:
@@ -75,8 +97,8 @@ flutter:
   assets:
     - assets/
     - assets/images/
-    - assets/lotties
-    - assets/svgs
+    - assets/lotties/
+    - assets/svgs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

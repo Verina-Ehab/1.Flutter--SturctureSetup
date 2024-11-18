@@ -3,16 +3,25 @@ flutter_native_splash:
   # background_image: "assets/images/splash.png"
   image: assets/images/splash.png
   # Splash Image to show in dark mode (Optional)
-  # color_dark: "#042a49"
-  # image_dark: assets/images/logo.png
+  color_dark: "#000000"
+  image_dark: assets/images/splash.png
 
   android_12:
     image: assets/images/splash_android12_logo.png
     color: "#ffffff"
+    image_dark: assets/images/splash_android12_logo.png
+    color_dark: "#000000"
 
   # The android, ios and web parameters can be used to disable generating a splash screen on a given
   # platform.
   android: true
   ios: true
   web: false
+
+
+
+
+# ---To use it---
+# dart run flutter_native_splash:create --path=flutter_native_splash.yaml
+# dart run flutter_native_splash:remove
 

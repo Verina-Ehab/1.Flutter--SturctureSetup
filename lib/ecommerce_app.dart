@@ -7,7 +7,6 @@ import 'core/routing/routes.dart';
 import 'core/themes/theme.dart';
 
 class EcommerceApp extends StatelessWidget {
-  
   final AppRouter appRouter;
   const EcommerceApp({super.key, required this.appRouter});
 
@@ -18,14 +17,31 @@ class EcommerceApp extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Vezeeta Clone',
+        title: 'E-commerce',
         themeMode: ThemeMode.system,
         theme: AppThemeManager.lightTheme,
         darkTheme: AppThemeManager.darkTheme,
         onGenerateRoute: appRouter.generateRoute,
-        initialRoute: Routes.onBoardingScreen ,
-        // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        // initialRoute: Routes.onBoardingScreen ,
+        home: const MyHomePage(),
       ),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Title',
+          style: Theme.of(context).textTheme.bodySmall,
+        ),
+      ),
+      body: Container(),
     );
   }
 }

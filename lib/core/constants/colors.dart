@@ -15,6 +15,6 @@ class ColorsManager {
   static const Color green = Colors.green;
   static const Color orange = Colors.orange;
 
-  static const Color mainPurple = Color(0xFF887ef9);
+  static const Color mainPurple = Color(0xFF8E6CEF);
   static const Color blue = Color(0xFF1877f2);
 }
