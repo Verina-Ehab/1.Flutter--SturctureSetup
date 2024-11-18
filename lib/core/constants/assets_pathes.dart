@@ -3,7 +3,9 @@ const String logo = "assets/svgs/logo.svg";
 
 // --IMAGES Pathes 
   // --onboarding--
-// const String onboardingDoctor = "assets/images/onboarding_doctor.png";
+const String allYouNeed = "assets/images/onboarding/all_you_need.png";
+const String getStarted = "assets/images/onboarding/get_started.png";
+const String background = "assets/images/onboarding/background.png";
 
 
   // --Splash
@@ -15,8 +17,8 @@ const String splashAndroid12Logo = "assets/images/splash_android12_logo.png";
 
 // --SVGS Pathes --
   // --onboarding--
-const String allYouNeed = "assets/svgs/onboarding/all_you_need.svg";
-const String getStarted = "assets/svgs/onboarding/get_started.svg";
+// const String allYouNeed = "assets/svgs/onboarding/all_you_need.svg";
+// const String getStarted = "assets/svgs/onboarding/get_started.svg";
 
 
 // --Lottie's Pathes --
