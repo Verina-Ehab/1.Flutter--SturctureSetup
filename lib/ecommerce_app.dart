@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_v1/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/constants/sizes.dart';
 import 'core/routing/app_router.dart';
-import 'core/routing/routes.dart';
 import 'core/themes/theme.dart';
 
 class EcommerceApp extends StatelessWidget {
   final AppRouter appRouter;
-  const EcommerceApp({super.key, required this.appRouter});
+  final String initialRoute;
+  const EcommerceApp({
+    super.key,
+    required this.appRouter, required this.initialRoute,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +26,14 @@ class EcommerceApp extends StatelessWidget {
         theme: AppThemeManager.lightTheme,
         darkTheme: AppThemeManager.darkTheme,
         onGenerateRoute: appRouter.generateRoute,
-        // initialRoute: Routes.onBoardingScreen ,
-        home: const MyHomePage(),
+        // initialRoute: initialRoute,
+        home: const OnboardingScreen(),
       ),
     );
   }
 }
+
+
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});

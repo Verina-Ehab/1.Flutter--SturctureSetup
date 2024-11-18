@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../constants/colors.dart';
 
-class AppTextButton extends StatelessWidget {
+class CustomTextButton extends StatelessWidget {
   final double? borderRadius;
   final Color? backgroundColor;
   final double? horizontalPadding;
@@ -11,9 +11,9 @@ class AppTextButton extends StatelessWidget {
   final double? buttonWidth;
   final double? buttonHeight;
   final String buttonText;
-  final TextStyle textStyle;
-  final VoidCallback onPressed;
-  const AppTextButton({
+  final TextStyle? textStyle;
+  final VoidCallback? onPressed;
+  const CustomTextButton({
     super.key,
     this.borderRadius,
     this.backgroundColor,
@@ -22,8 +22,8 @@ class AppTextButton extends StatelessWidget {
     this.buttonHeight,
     this.buttonWidth,
     required this.buttonText,
-    required this.textStyle,
-    required this.onPressed,
+    this.textStyle,
+    this.onPressed,
   });
 
   @override

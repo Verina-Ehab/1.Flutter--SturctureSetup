@@ -27,6 +27,11 @@ class TextThemeManager {
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
         color: ColorsManager.white),
+    //Headlines_font 32_WhiteBold
+    displayLarge: const TextStyle().copyWith(
+        fontSize: 32.0,
+        fontWeight: FontWeight.w600,
+        color: ColorsManager.white),
 
     //Text_font 14_BlackBold
     bodyLarge: const TextStyle().copyWith(
@@ -59,6 +64,10 @@ class TextThemeManager {
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.white),
+    displaySmall: const TextStyle().copyWith(
+        fontSize: 14.0,
+        color: ColorsManager.white,
+        fontWeight: FontWeight.w300),
   );
 
   // -- Customized Dark Text Theme
@@ -82,6 +91,11 @@ class TextThemeManager {
     bodyLarge: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
+        color: ColorsManager.white),
+    //Headlines_font 32_WhiteBold
+    displayLarge: const TextStyle().copyWith(
+        fontSize: 32.0,
+        fontWeight: FontWeight.w600,
         color: ColorsManager.white),
     //Text_font 14_Grey
     bodyMedium: const TextStyle().copyWith(
@@ -108,5 +122,10 @@ class TextThemeManager {
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.white),
+
+    displaySmall: const TextStyle().copyWith(
+        fontSize: 14.0,
+        color: ColorsManager.white,
+        fontWeight: FontWeight.w300),
   );
 }
