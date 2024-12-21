@@ -8,3 +8,7 @@ abstract class ApiResult<T> with _$ApiResult<T> {
   const factory ApiResult.success(T data) = Success<T>;
   const factory ApiResult.failure(ErrorHandler errorHandler) = Failure<T>;
 }
+
+
+// this file instead of Either<left/failure, right/success>
+// freezed pckg will generate this code of success and failure
