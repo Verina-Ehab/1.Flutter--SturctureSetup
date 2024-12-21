@@ -1,12 +1,12 @@
 
 A new Flutter project for 
-# Structure Setup
-# Splash Screen
-# onboarding with provider and bloc
+# 1.Structure Setup
+# 2.Splash Screen
+# 3.onboarding with provider and bloc
 
 
 
-## Getting Started
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
