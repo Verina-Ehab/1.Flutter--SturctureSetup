@@ -1,6 +1,10 @@
-# flutter_ecommerce_v1
 
-A new Flutter project.
+A new Flutter project for 
+# Structure Setup
+# Splash Screen
+# onboarding with provider and bloc
+
+
 
 ## Getting Started
 
